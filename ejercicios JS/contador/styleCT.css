@@ -1,10 +1,14 @@
 body {
     background-color: rgb(7, 35, 44);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 h1 {
-    color: rgb(252, 252, 255);
-    margin-left: 20px;
+    color: rgb(255, 255, 255);
+    text-align: center; /* Centrado horizontal */
 }
 
 textarea {
@@ -18,21 +22,26 @@ textarea {
     resize: none;
 }
 
-button  {
-    background-color: #ff0000; /* Rojo */
+button {
+    background-color: #ff0000; 
     border: none;
-    color: #ffffff; /* Blanco */
+    color: #ffffff; 
     padding: 15px 32px;
-    text-align: center;
+    text-align: center; /* Centrado horizontal */
     text-decoration: none;
-    display: inline-block;
+    display:flex;
+    flex-direction: column;
     font-size: 16px;
-    border-radius: 12px; /* Bordes redondeados */
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2); /* Sombra */
-    transition-duration: 0.4s; /* Efecto de transición */
+    border-radius: 12px;
+    box-shadow: 0 8px 16px 0 rgba(255, 255, 255, 0.2); 
+    transition-duration: 0.4s;
 }
 
 .button-spiderman:hover {
-    background-color: #000000; /* Negro */
-    color: #ff0000; /* Rojo */
+    background-color: #000000; 
+    color: #ff0000; 
+}
+
+#resultado {
+    color:#ccc
 }

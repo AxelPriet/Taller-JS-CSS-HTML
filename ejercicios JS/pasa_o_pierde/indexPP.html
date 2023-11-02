@@ -1,23 +1,24 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Verificador de Mayoría de Edad</title>
-    <link rel="stylesheet" type="text/css" href="styleM.css">
+    <title>Verificador de Notas</title>
+    <link rel="stylesheet" type="text/css" href="stylePP.css">
 </head>
 <body>
-    <h1>Verificador de Mayoria de Edad</h1>
-    <input type="text" id="nombre" placeholder="Ingresa tu nombre">
-    <input type="number" id="edad" placeholder="Ingresa tu edad">
-    <button onclick="verificarEdad()">Verificar Edad</button>
-    <p id="resultado"></p>
-
-    <script src="appM.js"></script>
+    <h1>Verificador de Notas</h1>
+    <label>Nombre:</label><input id="name" type="text"><br>
+    <label>Materia:</label><input id="subject" type="text"><br>
+    <label>Nota 1:</label><input id="grade1" type="number" step="0.1" min="0" max="5"><br>
+    <label>Nota 2:</label><input id="grade2" type="number" step="0.1" min="0" max="5"><br>
+    <label>Nota 3:</label><input id="grade3" type="number" step="0.1" min="0" max="5"><br>
+    <button onclick="calculateAverage()">Verificar</button>
+    <p id="result"></p>
 
     <select id="miLista" onchange="redireccionar()">
         <option value="">Selecciona un ejercicio</option>
         <option value="../contador/indexCT.html">Contador</option>
         <option value="../texto_o_numero/indexTN.html">Texto o numero</option>
-        <option value="../pasa_o_pierde/indexPP.html">Promedio materia</option>
+        <option value="../mayor_edad/indexM.html">Mayor edad</option>
         <option value="../par_impar/indexPI.html">Par o impar</option>
         <option value="../buscar_texto/indexBT.html">Buscador texto</option>
         <option value="../divisibilidad/indexDIV.html">Divisibilidad</option>
@@ -26,7 +27,7 @@
 
 <button onclick="window.location.href='../principal/index.html'">Volver a la pagina principal</button>
 
-<script src="appM.js"></script>
+<script src="appPP.js"></script>
 
 <script type="text/javascript">
     function redireccionar() {
@@ -36,5 +37,9 @@
         }
     }
 </script>
+
+    <script src="appPP.js"></script>
+
 </body>
 </html>
+

@@ -1,32 +1,31 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Verificador de Mayoría de Edad</title>
-    <link rel="stylesheet" type="text/css" href="styleM.css">
+    <title>Verificador de Divisibilidad</title>
+    <script src="appDIV.js"></script>
+    <link rel="stylesheet" type="text/css" href="styleDIV.css">
 </head>
 <body>
-    <h1>Verificador de Mayoria de Edad</h1>
-    <input type="text" id="nombre" placeholder="Ingresa tu nombre">
-    <input type="number" id="edad" placeholder="Ingresa tu edad">
-    <button onclick="verificarEdad()">Verificar Edad</button>
+    <h1>Verificador de Divisibilidad</h1>
+    <input type="number" id="numero1" placeholder="Ingrese el primer numero">
+    <input type="number" id="numero2" placeholder="Ingrese el segundo numero">
+    <button onclick="verificarDivisibilidad()">Verificar</button>
     <p id="resultado"></p>
-
-    <script src="appM.js"></script>
 
     <select id="miLista" onchange="redireccionar()">
         <option value="">Selecciona un ejercicio</option>
         <option value="../contador/indexCT.html">Contador</option>
         <option value="../texto_o_numero/indexTN.html">Texto o numero</option>
+        <option value="../mayor_edad/indexM.html">Mayor edad</option>
         <option value="../pasa_o_pierde/indexPP.html">Promedio materia</option>
         <option value="../par_impar/indexPI.html">Par o impar</option>
         <option value="../buscar_texto/indexBT.html">Buscador texto</option>
-        <option value="../divisibilidad/indexDIV.html">Divisibilidad</option>
         <option value="../lista_par_impar/indexLPI.html">Lista par - impar</option>
     </select>
 
 <button onclick="window.location.href='../principal/index.html'">Volver a la pagina principal</button>
 
-<script src="appM.js"></script>
+<script src="appDIV.js"></script>
 
 <script type="text/javascript">
     function redireccionar() {
@@ -38,3 +37,4 @@
 </script>
 </body>
 </html>
+

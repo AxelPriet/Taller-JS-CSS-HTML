@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mi Página</title>
+    <link rel="stylesheet" type="text/css" href="pincipal.css">
+</head>
+<body>
+    <select id="miLista" onchange="redireccionar()">
+        <option value="">Selecciona una opcion</option>
+        <option value="../contador/indexCT.html">Contador</option>
+        <option value="../texto_o_numero/indexTN.html">Texto o numero</option>
+        <option value="../mayor_edad/indexM.html">Mayor edad</option>
+        <option value="../pasa_o_pierde/indexPP.html">Promedio materia</option>
+        <option value="../par_impar/indexPI.html">Par o impar</option>
+        <option value="../buscar_texto/indexBT.html">Buscador texto</option>
+        <option value="../divisibilidad/indexDIV.html">Divisibilidad</option>
+        <option value="../lista_par_impar/indexLPI.html">Lista par - impar</option>
+    </select>
+
+    <script type="text/javascript">
+        function redireccionar() {
+            var url = document.getElementById('miLista').value;
+            if (url != "") {
+                window.location = url;
+            }
+        }
+    </script>
+</body>
+</html>

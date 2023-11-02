@@ -4,3 +4,5 @@ function contarCaracteres() {
     var longitud = textoSinEspacios.length;
     document.getElementById("resultado").innerHTML = "Cantidad de caracteres del texto ingresado:" + longitud;
 }
+
+
